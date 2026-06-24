@@ -1,0 +1,34 @@
+
+ 
+h1{
+    color: rgb(13, 13, 202);
+ }
+ h1:hover{
+    color: azure;
+ }
+p{
+    font-size: 20px;
+    color:rgb(253, 253, 254);
+}
+
+body {
+    background-image: url("images/Davoti.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box {
+    margin: 25px;
+    border: 2px solid red;
+    padding: 10px;
+    background-color: aquamarine;
+    color: blue;
+}
+a{
+    color: azure;
+    text-decoration: none ;
+}
+a:hover{
+    color: rgb(59, 198, 9);
+}
