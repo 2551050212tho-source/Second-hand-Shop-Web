@@ -25,10 +25,4 @@ body {
     background-color: aquamarine;
     color: blue;
 }
-a{
-    color: azure;
-    text-decoration: none ;
-}
-a:hover{
-    color: rgb(59, 198, 9);
-}
+
