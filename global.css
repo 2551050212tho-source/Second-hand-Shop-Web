@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    background-color: #240234; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 5%;              
+    border-bottom: 1px solid #fcfcfc; 
+    gap: 30px;
+}
+
+.search-bar {
+    display: flex;
+    flex: 10;
+    max-width: 700px;              
+    border: 1px solid #ccc;        
+    border-radius: 6px;            
+    overflow: hidden;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background-color: transparent; 
+    color: #333;                 
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;              
+    background-color: #ffffff;     
+    gap: 45px;                     
+}
+
+.category-dropdown-btn {
+    background-color: #333333;    
+    color: white;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.category-dropdown-btn:hover {
+    background-color: #ff5722;    
+    color: black;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li {
+    margin-right: 30px; 
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.navigation ul li a:hover {
+    color: #ff5722;
+}
+
+.logo a {
+font-size: 20px;
+font-weight: 800;
+color: #fcfcfc;
+text-decoration: none;
+}
+
+.logo span {
+    color: #fb4f1b;
+}
+
+.header-icons a {
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;             
+    padding: 15px 15px;
+    font-size: 20px;
+    background-color: #510a69;  
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.header-icons a:hover {
+    background-color: #ffffff; 
+    color: #111111;
+}
