@@ -1,0 +1,20 @@
+﻿.listing {
+    background-color:lightgray;
+    margin-top: 8px;
+    display: flex;
+    padding: 20px;
+    align-items:center;
+}
+.sp{
+    width:450px;
+}
+.sl {
+    width: 230px;
+}
+.gia {
+    width: 230px;
+}
+.hd {
+    width: 230px;
+}
+ 
