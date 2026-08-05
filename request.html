@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet href="request.css">
+        <title>Request</title>
+    </head>
+    <body>
+        <form class = "formrequest" id="layform">
+
+            <h2>Yêu cầu món đồ cần tìm</h2>
+
+            <label class="mainlabel">Họ và tên</label>
+            <input type="text" id="hoten" name ="hoten" placeholder="Nhập vào họ tên..." >
+
+            <label class="mainlabel">Số điện thoại</label>
+            <input type="text" id="sdt" name="sdt" placeholder="xxxxxxxxxx..." minlength="10" >
+
+            <label class="mainlabel">Nhập vào tên món đồ cần tìm</label>
+            <input type="text" placeholder="Tên món đồ..." >
+
+            <label class="mainlabel">Chọn mức ngân sách mong muốn</label>
+            <div class="mucngansach">
+                <div class="muc">
+                    <input type="radio" id="duoi500k" name="nhansach" value="Dưới 500k">
+                    <label for="duoi500k">Dưới 500k</label>
+                </div>
+
+                <div class="muc">
+                    <input type="radio" id="500k-2tr" name="nhansach" value="500k - 2tr">
+                    <label for="500k-2tr">500k - 2tr</label>
+                </div>
+
+                <div class="muc">
+                    <input type="radio" id="tren2tr" name="nhansach" value="Trên 2tr">
+                    <label for="tren2tr">Trên 2tr</label>
+                </div>
+
+            </div>
+
+            <label class="mainlabel">Chọn nơi nhận thông báo</label>
+            <div class="thongbao">
+                <input type="checkbox" id="email" name="notif" value="email" >
+                <label for="email">Email</label>
+            </div>
+
+            <div class="thongbao">
+                <input type="checkbox" id="zalo" name="notif" value="zalo" >
+                <label for="zalo">Zalo</label>
+            </div>
+
+            <label class="mainlabel">Ghi chú thêm</label>
+            <textarea placeholder="Cho chi tiết thêm về tình trạng món đồ mong muốn..."></textarea>
+            <button type="submit">Gửi</button>
+
+        </form>
+        <script src="request-validation.js"></script>
+    </body>
+</html>
