@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Phí Dịch Vụ - Vận Chuyển & Kiểm Định</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        th, td { border: 1px solid #000; padding: 10px; text-align: center; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+    <h2>Bảng Phí Vận Chuyển Đồ Cũ</h2>
+    <!-- Bảng 1: Phí vận chuyển theo khu vực -->
+    <table>
+        <thead>
+            <tr>
+                <th>Khu vực</th>
+                <th>Loại hàng (Gọn nhẹ/Cồng kềnh)</th>
+                <th>Phí vận chuyển</th>
+                <th>Thời gian giao</th>
+                <th>Ghi chú</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nội thành (TP.HCM)</td>
+                <td>Gọn nhẹ</td>
+                <td>20,000 VNĐ</td>
+                <td>1 - 2 ngày</td>
+                <td>Giao trong giờ hành chính</td>
+            </tr>
+            <tr>
+                <td>Nội thành (TP.HCM)</td>
+                <td>Cồng kềnh</td>
+                <td>50,000 VNĐ</td>
+                <td>2 - 3 ngày</td>
+                <td>Cần hẹn trước giờ giao</td>
+            </tr>
+            <tr>
+                <td>Ngoại thành/Tỉnh</td>
+                <td>Gọn nhẹ</td>
+                <td>35,000 VNĐ</td>
+                <td>3 - 5 ngày</td>
+                <td>Chuyển phát nhanh</td>
+            </tr>
+            <tr>
+                <td>Ngoại thành/Tỉnh</td>
+                <td>Cồng kềnh</td>
+                <td>100,000 VNĐ</td>
+                <td>5 - 7 ngày</td>
+                <td>Phụ phí vùng sâu vùng xa (nếu có)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Bảng Phí Kiểm Định Độ Mới Của Đồ</h2>
+    <!-- Bảng 2: Phí kiểm định độ mới -->
+    <table>
+        <thead>
+            <tr>
+                <th>Loại sản phẩm</th>
+                <th>Phí kiểm định</th>
+                <th>Chi tiết kiểm định</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Quần áo, Thời trang</td>
+                <td>15,000 VNĐ / sản phẩm</td>
+                <td>Kiểm tra sờn rách, ố màu, hỏng khóa kéo</td>
+            </tr>
+            <tr>
+                <td>Đồ điện tử mini</td>
+                <td>30,000 VNĐ / sản phẩm</td>
+                <td>Kiểm tra nguồn, chức năng cơ bản, pin</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Nút bấm ở cuối trang gọi hiệu ứng JS -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="showNotification()">Nhận voucher giảm giá</button>
+    </div>
+
+    <!-- Nhúng file JS -->
+    <script src="effect.js"></script>
+
+</body>
+</html>
