@@ -1,24 +1,84 @@
+body{
+    background-color: #124170;
+}
+
 .formrequest{
-    margin-top:70px;
-    border-width:2px;
+    background-color:#AAFFC7;
+    border-width:5px;
     border-style:solid;
-    border-color:black;
+    border-radius:8px;
+    border-color:#AAFF;
     text-align:center;
-    margin-left:300px;
-    margin-right:300px;
+    margin-left:350px;
+    margin-right:350px;
+}
+.formrequest h2{
+    color: white;
+    text-shadow: 1px 1px rgb(73, 73, 73);
+    background-color:#AAFF;
+    margin:0 auto;
+    padding:20px;
+    
 }
 label{
     display:block;
 }
 .mainlabel{
-    padding-top:10px;
-    text-decoration: bold;
+    background-color:#AAFF;
+    margin: 0 auto;
+    border-radius:10px;
+    align-items: center;
+    text-align: center;
+    padding:8px;
+    color:white;
+    width:max-content;
+    margin-top:5px;
+    margin-bottom:5px;
 }
+
 .muc, .thongbao{
     display:inline-block;
     padding-right:30px;
 }
+
+#hoten, #sdt, #tendo{
+    border:solid;
+    border-width:3px;
+    border-color:#AAFF;
+    width:250px;
+    height:25px;
+}
 textarea{
+    min-width:350px;
+    min-height:100px;
     max-width:500px;
-    max-height:300px;
+    max-height:150px;
+    border-color:#AAFF;
+    border-width:3px;
+}
+#hoten, #sdt, #tendo, textarea:focus{
+    outline:none;
+}
+
+.nutgui{
+    display:block;
+    align-items: center;
+    margin: 0 auto;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:10px;
+    font-size:15px;
+    padding-bottom:10px;
+    text-align:center;
+    border-radius:5px;
+    background-color:white;
+    border-color:#AAFF;
+    border-width:3px;
+    color:#AAFF;
+    box-shadow:2px 2px rgb(83, 83, 83);
+    margin-bottom:10px;
+    transition: opacity 0.15s;
+}
+.nutgui:hover{
+    opacity: .5;
 }
