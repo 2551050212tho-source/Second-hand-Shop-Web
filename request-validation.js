@@ -20,12 +20,7 @@ form.addEventListener('submit', function nghe(event){
         alert("sdt nhap thieu");
         return;
     }
-    // const regex = /^[0-9]{10}$/;
-
-    // if (!regex.test(sdt)) {
-    //     alert("Số điện thoại phải gồm đúng 10 chữ số.");
-    //     return;
-    // }
+   
 
     alert("Gửi yêu cầu thành công");
     form.submit();
