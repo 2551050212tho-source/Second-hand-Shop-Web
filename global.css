@@ -6,7 +6,7 @@
 }
 
 .site-header {
-    background-color: #240234; 
+    background-color: #325E6A; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
     width: 100%;
 }
@@ -16,15 +16,15 @@
     justify-content: space-between; 
     align-items: center;
     padding: 15px 5%;              
-    border-bottom: 1px solid #fcfcfc; 
     gap: 30px;
 }
 
 .search-bar {
+    color: #325E6A;  
     display: flex;
     flex: 10;
-    max-width: 700px;              
-    border: 1px solid #ccc;        
+    max-width: 600px;              
+    border: 1px solid #ffffff;        
     border-radius: 6px;            
     overflow: hidden;
 }
@@ -35,39 +35,41 @@
     border: none;
     outline: none;
     font-size: 14px;
+    background-color: #325E6A;
+    color: #fcfafa;
 }
 
 .search-bar button {
     background-color: transparent; 
-    color: #333;                 
+    color: #fcfafa;                 
     border: none;
     padding: 0 15px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .header-bottom {
     display: flex;
     align-items: center;
     padding: 10px 5%;              
-    background-color: #ffffff;     
-    gap: 45px;                     
+    background-color: #325E6A;     
+    gap: 170px;                     
 }
 
 .category-dropdown-btn {
-    background-color: #333333;    
-    color: white;
+    background-color: #5398ab;    
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     font-weight: bolder;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.2s;
 }
 
 .category-dropdown-btn:hover {
-    background-color: #ff5722;    
-    color: black;
+    background-color: #ffffff;    
+    color: rgb(5, 5, 5);
 }
 
 .navigation ul {
@@ -81,7 +83,7 @@
 
 .navigation ul li a {
     text-decoration: none;
-    color: #333333;
+    color: #ffffff;
     font-weight: 600;
     font-size: 15px;
     transition: color 0.2s;
@@ -92,29 +94,91 @@
 }
 
 .logo a {
-font-size: 20px;
+font-size: 23px;
 font-weight: 800;
 color: #fcfcfc;
 text-decoration: none;
 }
 
 .logo span {
-    color: #fb4f1b;
+    color: #ff9a00;
 }
 
-.header-icons a {
+.header-icons-shoppingcart a {
     text-decoration: none;
     width: 45px;
     height: 45px;
     border-radius: 50%;             
     padding: 15px 15px;
     font-size: 20px;
-    background-color: #510a69;  
+    background-color: #5398ab;  
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    color: #fafafa;  
 }
-.header-icons a:hover {
+.header-icons-shoppingcart a:hover {
     background-color: #ffffff; 
     color: #111111;
 }
+.site-footer {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 15px 3%;
+    background-color: #325E6A;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+
+}
+
+.footer-logo {
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.footer-col a span {
+    color: #ff9a00;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    max-width: 300px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    position: relative;
+    color: #fafafa;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 5px;
+}
+
+.footer-col ul li a {
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2 ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fb4f1b;
+    padding-left: 5px;
+}
+

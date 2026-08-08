@@ -14,23 +14,3 @@
     object-position: center;
 }
 
-.banner-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.btn-shop-now {
-    text-decoration: none;
-    color: #333;
-    background-color: #ffffff;
-    padding: 12px 30px;
-    font-weight: bold;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-}
-
-.btn-shop-now:hover {
-    background-color: #ff5722;
-    color: white;
-    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
-}
