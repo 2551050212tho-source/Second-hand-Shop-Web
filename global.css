@@ -174,7 +174,7 @@ text-decoration: none;
     color: #fafafa;
     text-decoration: none;
     font-size: 14px;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
 }
 
 .footer-col ul li a:hover {
