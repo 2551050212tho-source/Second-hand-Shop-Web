@@ -10,6 +10,7 @@ body{
     text-align:center;
     margin-left:350px;
     margin-right:350px;
+    min-height: 500px;
 }
 .commonq h2{
     color: white;
@@ -46,7 +47,7 @@ body{
     background-color:white;
 }
 
-p{
+details p{
     border:solid;
     border-width:2px;
     border-color:#67C090;
