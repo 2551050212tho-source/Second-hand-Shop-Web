@@ -7,15 +7,16 @@ body{
     border-width:5px;
     border-style:solid;
     border-radius:8px;
-    border-color:#AAFF;
+    border-color:#325E6A;
     text-align:center;
     margin-left:350px;
     margin-right:350px;
+    margin-bottom:20px;
 }
 .formrequest h2{
     color: white;
     text-shadow: 1px 1px rgb(73, 73, 73);
-    background-color:#AAFF;
+    background-color:#325E6A;
     margin:0 auto;
     padding:20px;
     
@@ -24,7 +25,7 @@ label{
     display:block;
 }
 .mainlabel{
-    background-color:#AAFF;
+    background-color:#325E6A;
     margin: 0 auto;
     border-radius:10px;
     align-items: center;
@@ -44,7 +45,7 @@ label{
 #hoten, #sdt, #tendo{
     border:solid;
     border-width:3px;
-    border-color:#AAFF;
+    border-color:#325E6A;
     width:250px;
     height:25px;
 }
@@ -53,7 +54,7 @@ textarea{
     min-height:100px;
     max-width:500px;
     max-height:150px;
-    border-color:#AAFF;
+    border-color:#325E6A;
     border-width:3px;
 }
 #hoten, #sdt, #tendo, textarea:focus{
@@ -72,9 +73,9 @@ textarea{
     text-align:center;
     border-radius:5px;
     background-color:white;
-    border-color:#AAFF;
+    border-color:#325E6A;
     border-width:3px;
-    color:#AAFF;
+    color:#325E6A;
     box-shadow:2px 2px rgb(83, 83, 83);
     margin-bottom:10px;
     transition: opacity 0.15s;

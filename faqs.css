@@ -6,7 +6,7 @@ body{
     border-width:5px;
     border-style:solid;
     border-radius:8px;
-    border-color:#AAFF;
+    border-color:#325E6A;
     text-align:center;
     margin-left:350px;
     margin-right:350px;
@@ -14,7 +14,7 @@ body{
 .commonq h2{
     color: white;
     text-shadow: 1px 1px rgb(73, 73, 73);
-    background-color:#AAFF;
+    background-color:#325E6A;
     margin:0 auto;
     padding:20px;
     margin-bottom:10px;
@@ -32,7 +32,7 @@ body{
     margin-bottom:10px;
     width:max-content;
     color:white;
-    background-color: #AAFF;
+    background-color: #325E6A;
     box-shadow: 2px 2px #2d5540;
     transition: opacity 0.15s;
 }
@@ -42,7 +42,7 @@ body{
 }
 .questions:active{
     border-color:#67C090;
-    color: #AAFF;
+    color: #325E6A;
     background-color:white;
 }
 
@@ -52,7 +52,7 @@ p{
     border-color:#67C090;
     border-radius:5px;
     color:white;
-    background-color:rgb(198, 198, 242);
+    background-color:#3f7b8b;
     padding:10px;
     margin-left:50px;
     margin-right:50px;
