@@ -23,15 +23,25 @@
         </form>
         
         <div class="header-icons-shoppingcart">
-            <a href="shoppingcart.html" class="fa-solid fa-cart-shopping"></a>
+            <a href="cart.html" class="fa-solid fa-cart-shopping"></a>
         </div>
     </div>
 
     <div class="header-bottom">
-        <div class="category-dropdown-btn">
-            ☰ Danh mục sản phẩm
-        </div>
+        <div class="category-dropdown">
+            <button id="category-btn" class="category-dropdown-btn">
+                <i class="fa-solid fa-bars"></i> Danh mục sản phẩm
+            </button>
 
+            <ul id="category-menu" class="category-menu">
+                <li><a href="products.html?cat=dientu" ><i class="fa-solid fa-laptop"></i>Đồ điện tử</a></li>
+                <li><a href="products.html?cat=giadung"><i class="fa-solid fa-blender"></i>Đồ gia dụng</a></li>
+                <li><a href="products.html?cat=nam"><i class="fa-solid fa-shirt"></i>Thời trang nam</a></li>
+                <li><a href="products.html?cat=nu"><i class="fa-solid fa-shirt"></i>Thời trang nữ</a></li>
+                <li><a href="products.html?cat=giay"><i class="fa-solid fa-shoe-prints"></i>Giay dép</a></li>
+            </ul>
+
+        </div>
         <nav class="navigation">
             <ul>
                 <li><a href="main.html">Trang chủ</a></li>
@@ -39,6 +49,7 @@
                 <li><a href="faqs.html">Câu hỏi thường gặp</a></li>
                 <li><a href="policy.html">Chính sách</a></li>
                 <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="pricing.html">Các loại phí</a></li>
             </ul>
         </nav>
     </div>
@@ -147,6 +158,6 @@
 </footer>
 
 <script src="effect.js"></script>
-
+<script src="main.js"></script>
 </body>
 </html>
