@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng & Đơn Mua</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      .section-title {
+        margin-top: 40px;
+        border-bottom: 2px solid #2196f3;
+        padding-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        vertical-align: middle;
+      }
+
+      th {
+        background-color: #f8f8f8;
+        font-weight: bold;
+        color: #555;
+      }
+
+      tr:hover {
+        background-color: #f9f9f9;
+      }
+
+      .product-img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid #eee;
+      }
+
+      .quantity-input {
+        width: 50px;
+        padding: 5px;
+        text-align: center;
+      }
+
+      .remove-btn {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .remove-btn:hover {
+        background-color: #ff1a1a;
+      }
+
+      .total-row {
+        font-weight: bold;
+        background-color: #f8f8f8;
+      }
+
+      .confirm-btn-container {
+        text-align: right;
+        margin-bottom: 40px;
+      }
+
+      .confirm-btn {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .confirm-btn:hover {
+        background-color: #45a049;
+      }
+
+      .badge-success {
+        background-color: #e8f5e9;
+        color: #2e7d32;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: bold;
+        display: inline-block;
+      }
+
+      .empty-message {
+        text-align: center;
+        color: #777;
+        padding: 20px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>🛒 Giỏ Hàng Của Bạn</h2>
+      <table id="cart-table">
+        <thead>
+          <tr>
+            <th>Ảnh</th>
+            <th>Tên món đồ</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-price="250000">
+            <td>
+              <img
+                src="images/áo phông xám.jpg"
+                alt="Áo đen tay dài"
+                class="product-img"
+              />
+            </td>
+            <td>Áo đen tay dài 'Made in the Streets'</td>
+            <td>250.000 đ</td>
+            <td>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                class="quantity-input"
+                onchange="updateTotal(this)"
+              />
+            </td>
+            <td class="item-total">250.000 đ</td>
+            <td>
+              <button class="remove-btn" onclick="removeRow(this)">Xóa</button>
+            </td>
+          </tr>
+          <tr data-price="550000">
+            <td>
+              <img
+                src="images/balo gấu đen.jpg"
+                alt="Balo đen gấu bông"
+                class="product-img"
+              />
+            </td>
+            <td>Balo Natoli đen với gấu bông</td>
+            <td>550.000 đ</td>
+            <td>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                class="quantity-input"
+                onchange="updateTotal(this)"
+              />
+            </td>
+            <td class="item-total">550.000 đ</td>
+            <td>
+              <button class="remove-btn" onclick="removeRow(this)">Xóa</button>
+            </td>
+          </tr>
+          <tr data-price="700000">
+            <td>
+              <img
+                src="images/balo trung.jpg"
+                alt="Balo đen Davies"
+                class="product-img"
+              />
+            </td>
+            <td>Balo Davies đen thiết kế 'Unlock'</td>
+            <td>700.000 đ</td>
+            <td>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                class="quantity-input"
+                onchange="updateTotal(this)"
+              />
+            </td>
+            <td class="item-total">700.000 đ</td>
+            <td>
+              <button class="remove-btn" onclick="removeRow(this)">Xóa</button>
+            </td>
+          </tr>
+          <tr data-price="1200000">
+            <td>
+              <img
+                src="images/áo dù đỏ.jpg"
+                alt="Áo khoác Varsity"
+                class="product-img"
+              />
+            </td>
+            <td>Áo khoác Varsity Davies đen đỏ</td>
+            <td>1.200.000 đ</td>
+            <td>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                class="quantity-input"
+                onchange="updateTotal(this)"
+              />
+            </td>
+            <td class="item-total">1.200.000 đ</td>
+            <td>
+              <button class="remove-btn" onclick="removeRow(this)">Xóa</button>
+            </td>
+          </tr>
+          <tr data-price="850000">
+            <td>
+              <img
+                src="images/áo lông hồng.jpg"
+                alt="Áo khoác hoodie nón"
+                class="product-img"
+              />
+            </td>
+            <td>Áo khoác hoodie nón đen khóa kéo</td>
+            <td>850.000 đ</td>
+            <td>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                class="quantity-input"
+                onchange="updateTotal(this)"
+              />
+            </td>
+            <td class="item-total">850.000 đ</td>
+            <td>
+              <button class="remove-btn" onclick="removeRow(this)">Xóa</button>
+            </td>
+          </tr>
+          <tr data-price="450000">
+            <td>
+              <img
+                src="images/quần-jean-ống-rộng.jpg"
+                alt="Quần jean ống rộng"
+                class="product-img"
+              />
+            </td>
+            <td>Quần jean ống rộng xám xước streetstyle</td>
+            <td>450.000 đ</td>
+            <td>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                class="quantity-input"
+                onchange="updateTotal(this)"
+              />
+            </td>
+            <td class="item-total">450.000 đ</td>
+            <td>
+              <button class="remove-btn" onclick="removeRow(this)">Xóa</button>
+            </td>
+          </tr>
+          <tr data-price="200000">
+            <td>
+              <img
+                src="images/quần short xám.jpg"
+                alt="Quần short thun"
+                class="product-img"
+              />
+            </td>
+            <td>Quần short thun xám thể thao unisex</td>
+            <td>200.000 đ</td>
+            <td>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                class="quantity-input"
+                onchange="updateTotal(this)"
+              />
+            </td>
+            <td class="item-total">200.000 đ</td>
+            <td>
+              <button class="remove-btn" onclick="removeRow(this)">Xóa</button>
+            </td>
+          </tr>
+          <tr data-price="650000">
+            <td>
+              <img
+                src="images/mũ lông cừu.jpg"
+                alt="Mũ bucket lông"
+                class="product-img"
+              />
+            </td>
+            <td>Mũ bucket lông kem cao cấp Louis Vuitton</td>
+            <td>650.000 đ</td>
+            <td>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                class="quantity-input"
+                onchange="updateTotal(this)"
+              />
+            </td>
+            <td class="item-total">650.000 đ</td>
+            <td>
+              <button class="remove-btn" onclick="removeRow(this)">Xóa</button>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="total-row">
+            <td colspan="4" style="text-align: right">Tổng cộng:</td>
+            <td colspan="2" id="cart-grand-total">4.850.000 đ</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="confirm-btn-container">
+        <button class="confirm-btn" onclick="confirmOrder()">
+          Xác nhận đặt hàng
+        </button>
+      </div>
+
+      <div class="section-title">
+        <h2>📦 Đơn Mua Thành Công</h2>
+      </div>
+
+      <table id="purchased-table">
+        <thead>
+          <tr>
+            <th>Ảnh</th>
+            <th>Tên món đồ</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody id="purchased-tbody">
+          <tr id="empty-purchased-msg">
+            <td colspan="6" class="empty-message">
+              Chưa có đơn hàng nào được mua.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      function formatVND(amount) {
+        return amount.toLocaleString("vi-VN") + " đ";
+      }
+
+      function updateTotal(input) {
+        const row = input.closest("tr");
+        const price = parseInt(row.getAttribute("data-price"));
+        const quantity = parseInt(input.value);
+        const total = price * quantity;
+
+        row.querySelector(".item-total").textContent = formatVND(total);
+        updateGrandTotal();
+      }
+
+      function updateGrandTotal() {
+        let grandTotal = 0;
+        const rows = document.querySelectorAll("#cart-table tbody tr");
+
+        rows.forEach((row) => {
+          const price = parseInt(row.getAttribute("data-price"));
+          const quantity = parseInt(row.querySelector(".quantity-input").value);
+          grandTotal += price * quantity;
+        });
+
+        document.getElementById("cart-grand-total").textContent =
+          formatVND(grandTotal);
+      }
+
+      function removeRow(button) {
+        if (confirm("Bạn có chắc chắn muốn xóa món đồ này khỏi giỏ hàng?")) {
+          const row = button.closest("tr");
+          row.remove();
+          updateGrandTotal();
+        }
+      }
+
+      function confirmOrder() {
+        const cartTbody = document.querySelector("#cart-table tbody");
+        const cartRows = cartTbody.querySelectorAll("tr");
+
+        if (cartRows.length === 0) {
+          alert("Giỏ hàng của bạn đang trống!");
+          return;
+        }
+
+        alert("Chúc mừng! Bạn đã đặt hàng thành công.");
+
+        const purchasedTbody = document.getElementById("purchased-tbody");
+        const emptyMsg = document.getElementById("empty-purchased-msg");
+
+        if (emptyMsg) {
+          emptyMsg.remove();
+        }
+
+        cartRows.forEach((row) => {
+          const imgSrc = row.querySelector(".product-img").src;
+          const name = row.cells[1].innerText;
+          const priceText = row.cells[2].innerText;
+          const quantity = row.querySelector(".quantity-input").value;
+          const totalText = row.querySelector(".item-total").innerText;
+
+          const newRow = document.createElement("tr");
+          newRow.innerHTML = `
+                <td><img src="${imgSrc}" class="product-img"></td>
+                <td>${name}</td>
+                <td>${priceText}</td>
+                <td>${quantity}</td>
+                <td><strong>${totalText}</strong></td>
+                <td><span class="badge-success">Mua thành công</span></td>
+            `;
+          purchasedTbody.appendChild(newRow);
+        });
+
+        cartTbody.innerHTML = "";
+        updateGrandTotal();
+      }
+
+      updateGrandTotal();
+    </script>
+  </body>
+</html>
