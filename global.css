@@ -132,7 +132,6 @@ text-decoration: none;
     margin: 0 auto;
     padding: 15px 3%;
     background-color: #325E6A;
-    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -209,7 +208,6 @@ text-decoration: none;
     position: absolute;
     top: 100%;                 
     left: 0;
-    width: 220px;               
     background-color: #ffffff;  
     box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
     border-radius: 6px;
@@ -250,4 +248,227 @@ text-decoration: none;
 .category-menu li a:hover {
     background-color: #f0f4f5;  
     color: #fb4f1b !important;  
+}
+
+@media (max-width: 1024px) {
+
+    .category-dropdown-btn {
+        min-width: 212px;
+    }
+
+    .category-menu {
+        max-width: 215px;
+    }
+
+    .header-top {
+        padding: 15px 3%;
+        gap: 20px;
+    }
+
+    .search-bar {
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .search-bar input {
+        padding: 10px 15px;
+    }
+
+    .header-bottom {
+        padding: 10px 3%;
+        gap: 60px;
+    }
+
+    .navigation ul {
+        margin-left: 0px;
+    }
+
+    .navigation ul li {
+        margin-right: 25px;
+    }
+
+    .navigation ul li a {
+        font-size: 15px;
+    }
+
+    .site-footer {
+        padding: 25px 4%;
+        gap: 10px;
+        min-height: 500px;
+    }
+
+    .footer-col {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    .footer-col p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-top {
+        padding: 12px 4%;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .search-bar {
+        order: 3;
+        flex: 1 1 100%;
+        max-width: none;
+        width: 100%;
+    }
+
+    .search-bar input {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .header-icons-shoppingcart a {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .header-bottom {
+        padding: 10px 4%;
+        gap: 15px;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+    }
+
+    .category-dropdown {
+        flex-shrink: 0;
+    }
+
+    .category-dropdown-btn {
+        padding: 9px 14px;
+        font-size: 14px;
+    }
+
+    .navigation {
+        flex: 1;
+        overflow-x: auto;
+    }
+
+    .navigation ul {
+        margin-left: 0;
+        width: max-content;
+    }
+
+    .navigation ul li {
+        margin-right: 18px;
+    }
+
+    .navigation ul li a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .category-menu {
+        width: 200px;
+    }
+
+    .site-footer {
+        padding: 30px 5%;
+        gap: 30px;
+        min-height: 200px;
+    }
+
+    .footer-col {
+        flex: 1 1 45%;
+        min-width: 0;
+    }
+
+    .footer-col p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header-top {
+        padding: 12px 4%;
+        gap: 10px;
+    }
+
+    .logo a {
+        font-size: 19px;
+    }
+
+    .header-icons-shoppingcart a {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .search-bar input {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .search-bar button {
+        padding: 0 12px;
+        font-size: 16px;
+    }
+
+    .header-bottom {
+        gap: 10px;
+        padding: 8px 4%;
+    }
+
+    .category-dropdown-btn {
+        padding: 5px 9px;
+        font-size: 13px;
+        min-width: 120px;
+        max-width: 200px;
+    }
+
+    .category-dropdown {
+        min-width: 120px;
+        max-width: 140px;
+    }
+
+    .navigation ul li {
+        margin-right: 15px;
+    }
+
+    .navigation ul li a {
+        font-size: 13px;
+    }
+
+    .category-menu {
+        max-width: 140px;
+        font-size: 9px;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        padding: 30px 8%;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+    }
+
+    .footer-col h4 {
+        font-size: 15px;
+    }
+
+    .footer-col p,
+    .footer-col ul li a {
+        font-size: 12px;
+    }
 }
