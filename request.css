@@ -1,7 +1,10 @@
 body{
     background-color: #124170;
 }
-
+.form-box{
+    display:flex;
+    margin: 20px auto;
+}
 .formrequest{
     background-color:#AAFFC7;
     border-width:5px;
@@ -9,9 +12,12 @@ body{
     border-radius:8px;
     border-color:#325E6A;
     text-align:center;
-    margin-left:350px;
-    margin-right:350px;
-    margin-bottom:20px;
+    display: inline-flex;
+    margin:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .formrequest h2{
     color: white;
@@ -39,7 +45,7 @@ label{
 
 .muc, .thongbao{
     display:inline-block;
-    padding-right:30px;
+    padding-right:20px;
 }
 
 #hoten, #sdt, #tendo{
@@ -50,9 +56,9 @@ label{
     height:25px;
 }
 textarea{
-    min-width:350px;
+    min-width:200px;
     min-height:100px;
-    max-width:500px;
+    max-width:300px;
     max-height:150px;
     border-color:#325E6A;
     border-width:3px;
@@ -83,4 +89,6 @@ textarea{
 .nutgui:hover{
     opacity: .5;
 }
-
+@media screen and (max-width:450px) {
+    
+}

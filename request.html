@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="global.css">
-        <link rel="stylesheet" href="request.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+        <link rel=stylesheet href="request.css">
         <title>Request</title>
     </head>
     <body>
@@ -13,7 +12,7 @@
     
             <div class="header-top">
                 <div class="logo">
-                    <a href="index.html"> 2HAND <span>UNIVERSE</span></a>
+                    <a href="main.html"> 2HAND <span>UNIVERSE</span></a>
                 </div>
                 
                 <form action="" class="search-bar">
@@ -22,86 +21,79 @@
                 </form>
                 
                 <div class="header-icons-shoppingcart">
-                    <a href="cart.html" class="fa-solid fa-cart-shopping"></a>
+                    <a href="shoppingcart.html" class="fa-solid fa-cart-shopping"></a>
                 </div>
             </div>
 
-    <div class="header-bottom">
-        <div class="category-dropdown">
-            <button id="category-btn" class="category-dropdown-btn">
-                <i class="fa-solid fa-bars"></i> Danh mục sản phẩm
-            </button>
+            <div class="header-bottom">
+                <div class="category-dropdown-btn">
+                    ☰ Danh mục sản phẩm
+                </div>
 
-            <ul id="category-menu" class="category-menu">
-                <li><a href="products.html?cat=dientu" ><i class="fa-solid fa-laptop"></i>Đồ điện tử</a></li>
-                <li><a href="products.html?cat=giadung"><i class="fa-solid fa-blender"></i>Đồ gia dụng</a></li>
-                <li><a href="products.html?cat=nam"><i class="fa-solid fa-shirt"></i>Thời trang nam</a></li>
-                <li><a href="products.html?cat=nu"><i class="fa-solid fa-shirt"></i>Thời trang nữ</a></li>
-                <li><a href="products.html?cat=giay"><i class="fa-solid fa-shoe-prints"></i>Giay dép</a></li>
-            </ul>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="main.html">Trang chủ</a></li>
+                        <li><a href="request.html">Muốn mua </a></li>
+                        <li><a href="faqs.html">Câu hỏi thường gặp</a></li>
+                        <li><a href="policy.html">Chính sách</a></li>
+                        <li><a href="about.html">Giới thiệu</a></li>
 
-        </div>
-        <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="request.html">Muốn mua </a></li>
-                <li><a href="faqs.html">Câu hỏi thường gặp</a></li>
-                <li><a href="policy.html">Chính sách</a></li>
-                <li><a href="about.html">Giới thiệu</a></li>
-                <li><a href="pricing.html">Các loại phí</a></li>
-            </ul>
-        </nav>
-    </div>
+        
+                    </ul>
+                </nav>
+            </div>
+
         </header>
+        <div class="form-box">
+            <form class = "formrequest" id="layform">
 
-        <form class = "formrequest" id="layform">
+                <h2>YÊU CẦU MÓN ĐỒ CẦN TÌM</h2>
 
-            <h2>YÊU CẦU MÓN ĐỒ CẦN TÌM</h2>
+                <label class="mainlabel">Họ và tên</label>
+                <input type="text" id="hoten" name ="hoten" placeholder="Nhập vào họ tên..." >
 
-            <label class="mainlabel">Họ và tên</label>
-            <input type="text" id="hoten" name ="hoten" placeholder="Nhập vào họ tên..." >
+                <label class="mainlabel">Số điện thoại</label>
+                <input type="text" id="sdt" name="sdt" placeholder="xxxxxxxxxx..." minlength="10" >
 
-            <label class="mainlabel">Số điện thoại</label>
-            <input type="text" id="sdt" name="sdt" placeholder="xxxxxxxxxx..." minlength="10" >
+                <label class="mainlabel">Nhập vào tên món đồ cần tìm</label>
+                <input type="text" id="tendo" placeholder="Tên món đồ..." >
 
-            <label class="mainlabel">Nhập vào tên món đồ cần tìm</label>
-            <input type="text" id="tendo" placeholder="Tên món đồ..." >
+                <label class="mainlabel">Chọn mức ngân sách mong muốn</label>
+                <div class="mucngansach">
+                    <div class="muc">
+                        <input type="radio" id="duoi500k" name="nhansach" value="Dưới 500k">
+                        <label for="duoi500k">Dưới 500k</label>
+                    </div>
 
-            <label class="mainlabel">Chọn mức ngân sách mong muốn</label>
-            <div class="mucngansach">
-                <div class="muc">
-                    <input type="radio" id="duoi500k" name="nhansach" value="Dưới 500k">
-                    <label for="duoi500k">Dưới 500k</label>
+                    <div class="muc">
+                        <input type="radio" id="500k-2tr" name="nhansach" value="500k - 2tr">
+                        <label for="500k-2tr">500k - 2tr</label>
+                    </div>
+
+                    <div class="muc">
+                        <input type="radio" id="tren2tr" name="nhansach" value="Trên 2tr">
+                        <label for="tren2tr">Trên 2tr</label>
+                    </div>
+
                 </div>
 
-                <div class="muc">
-                    <input type="radio" id="500k-2tr" name="nhansach" value="500k - 2tr">
-                    <label for="500k-2tr">500k - 2tr</label>
+                <label class="mainlabel">Chọn nơi nhận thông báo</label>
+                <div class="thongbao">
+                    <input type="checkbox" id="email" name="notif" value="email" >
+                    <label for="email">Email</label>
                 </div>
 
-                <div class="muc">
-                    <input type="radio" id="tren2tr" name="nhansach" value="Trên 2tr">
-                    <label for="tren2tr">Trên 2tr</label>
+                <div class="thongbao">
+                    <input type="checkbox" id="zalo" name="notif" value="zalo" >
+                    <label for="zalo">Zalo</label>
                 </div>
 
+                <label class="mainlabel">Ghi chú thêm</label>
+                <textarea placeholder="Cho chi tiết thêm về tình trạng món đồ mong muốn..."></textarea>
+                <button class="nutgui" type="submit">Gửi</button>
+
+            </form>
             </div>
-
-            <label class="mainlabel">Chọn nơi nhận thông báo</label>
-            <div class="thongbao">
-                <input type="checkbox" id="email" name="notif" value="email" >
-                <label for="email">Email</label>
-            </div>
-
-            <div class="thongbao">
-                <input type="checkbox" id="zalo" name="notif" value="zalo" >
-                <label for="zalo">Zalo</label>
-            </div>
-
-            <label class="mainlabel">Ghi chú thêm</label>
-            <textarea placeholder="Cho chi tiết thêm về tình trạng món đồ mong muốn..."></textarea>
-            <button class="nutgui" type="submit">Gửi</button>
-
-        </form>
         <footer>
             <div class="site-footer">
                 <div class="footer-col">
@@ -113,7 +105,7 @@
                 <div class="footer-col">
                     <h4>Liên kết nhanh</h4>
                     <ul>
-                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="main.html">Trang chủ</a></li>
                         <li><a href="request.html">Muốn mua</a></li>
                         <li><a href="faqs.html">Câu hỏi thường gặp</a></li>
                         <li><a href="policy.html">chính sách</a></li>
@@ -131,6 +123,5 @@
             </div>
         </footer>
         <script src="request-validation.js"></script>
-        <script src="main.js"></script>
     </body>
 </html>
