@@ -1,50 +1,113 @@
 .policy-container {
-    max-width: 800px;
+    max-width: 850px;
+    width: 92%;
     margin: 40px auto;
-    padding: 30px;
+    padding: 35px;
     background-color: #fcfcfc;
     border-left: 5px solid #2563eb;
-    border-radius: 4px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    line-height: 1.6;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    line-height: 1.7;
     font-family: Arial, sans-serif;
 }
 
 .policy-container h2 {
     color: #2563eb;
     font-size: 26px;
-    border-bottom: 2px dashed #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    border-bottom: 2px dashed #cbd5e1;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    font-weight: 700;
 }
 
 .policy-container h3 {
-    color: #333;
+    color: #1e293b;
     font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 .policy-container p {
-    color: #555;
-    font-size: 16px;
+    color: #475569;
+    font-size: 15px;
     margin-bottom: 15px;
     text-align: justify;
 }
 
 .policy-container ul {
     list-style-type: disc;
-    padding-left: 25px;
+    padding-left: 22px;
     margin-bottom: 20px;
 }
 
 .policy-container ul li {
-    color: #444;
-    font-size: 16px;
-    margin-bottom: 8px;
+    color: #334155;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .policy-container strong, 
 .policy-container b {
-    color: #f59e0b;
+    color: #d97706;
+}
+
+.action-btn-wrapper {
+    margin-top: 30px;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Media Queries cho Policy Page */
+@media screen and (max-width: 768px) {
+    .policy-container {
+        margin: 20px auto;
+        padding: 22px 18px;
+        border-left-width: 4px;
+    }
+
+    .policy-container h2 {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+    .policy-container h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .policy-container p, 
+    .policy-container ul li {
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .policy-container h2 {
+        font-size: 19px;
+    }
+
+    .policy-container h3 {
+        font-size: 16px;
+    }
+
+    .policy-container ul {
+        padding-left: 18px;
+    }
 }
