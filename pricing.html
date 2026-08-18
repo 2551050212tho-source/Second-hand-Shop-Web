@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bảng Phí Dịch Vụ - Vận Chuyển & Kiểm Định</title>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="pricing.css">
 </head>
@@ -18,7 +18,7 @@
         </div>
         
         <form action="" class="search-bar">
-            <input type="text">
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
             <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         
@@ -34,18 +34,17 @@
             </button>
 
             <ul id="category-menu" class="category-menu">
-                <li><a href="products.html?cat=dientu" ><i class="fa-solid fa-laptop"></i>Đồ điện tử</a></li>
-                <li><a href="products.html?cat=giadung"><i class="fa-solid fa-blender"></i>Đồ gia dụng</a></li>
-                <li><a href="products.html?cat=nam"><i class="fa-solid fa-shirt"></i>Thời trang nam</a></li>
-                <li><a href="products.html?cat=nu"><i class="fa-solid fa-shirt"></i>Thời trang nữ</a></li>
-                <li><a href="products.html?cat=giay"><i class="fa-solid fa-shoe-prints"></i>Giay dép</a></li>
+                <li><a href="products.html?cat=dientu"><i class="fa-solid fa-laptop"></i> Đồ điện tử</a></li>
+                <li><a href="products.html?cat=giadung"><i class="fa-solid fa-blender"></i> Đồ gia dụng</a></li>
+                <li><a href="products.html?cat=nam"><i class="fa-solid fa-shirt"></i> Thời trang nam</a></li>
+                <li><a href="products.html?cat=nu"><i class="fa-solid fa-shirt"></i> Thời trang nữ</a></li>
+                <li><a href="products.html?cat=giay"><i class="fa-solid fa-shoe-prints"></i> Giày dép</a></li>
             </ul>
-
         </div>
         <nav class="navigation">
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="request.html">Muốn mua </a></li>
+                <li><a href="request.html">Muốn mua</a></li>
                 <li><a href="faqs.html">Câu hỏi thường gặp</a></li>
                 <li><a href="policy.html">Chính sách</a></li>
                 <li><a href="about.html">Thông tin nhóm</a></li>
@@ -59,73 +58,77 @@
     <div class="pricing-container">
         <h2>Bảng Phí Vận Chuyển Đồ Cũ</h2>
         
-        <table class="pricing-table">
-            <thead>
-                <tr>
-                    <th>Khu vực</th>
-                    <th>Loại hàng (Gọn nhẹ/Cồng kềnh)</th>
-                    <th>Phí vận chuyển</th>
-                    <th>Thời gian giao</th>
-                    <th>Ghi chú</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Nội thành (TP.HCM)</td>
-                    <td>Gọn nhẹ</td>
-                    <td class="fee-highlight">20,000 VNĐ</td>
-                    <td>1 - 2 ngày</td>
-                    <td>Giao trong giờ hành chính</td>
-                </tr>
-                <tr>
-                    <td>Nội thành (TP.HCM)</td>
-                    <td>Cồng kềnh</td>
-                    <td class="fee-highlight">50,000 VNĐ</td>
-                    <td>2 - 3 ngày</td>
-                    <td>Cần hẹn trước giờ giao</td>
-                </tr>
-                <tr>
-                    <td>Ngoại thành/Tỉnh</td>
-                    <td>Gọn nhẹ</td>
-                    <td class="fee-highlight">35,000 VNĐ</td>
-                    <td>3 - 5 ngày</td>
-                    <td>Chuyển phát nhanh</td>
-                </tr>
-                <tr>
-                    <td>Ngoại thành/Tỉnh</td>
-                    <td>Cồng kềnh</td>
-                    <td class="fee-highlight">100,000 VNĐ</td>
-                    <td>5 - 7 ngày</td>
-                    <td>Phụ phí vùng sâu vùng xa (nếu có)</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Khu vực</th>
+                        <th>Loại hàng (Gọn nhẹ/Cồng kềnh)</th>
+                        <th>Phí vận chuyển</th>
+                        <th>Thời gian giao</th>
+                        <th>Ghi chú</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nội thành (TP.HCM)</td>
+                        <td>Gọn nhẹ</td>
+                        <td class="fee-highlight">20,000 VNĐ</td>
+                        <td>1 - 2 ngày</td>
+                        <td>Giao trong giờ hành chính</td>
+                    </tr>
+                    <tr>
+                        <td>Nội thành (TP.HCM)</td>
+                        <td>Cồng kềnh</td>
+                        <td class="fee-highlight">50,000 VNĐ</td>
+                        <td>2 - 3 ngày</td>
+                        <td>Cần hẹn trước giờ giao</td>
+                    </tr>
+                    <tr>
+                        <td>Ngoại thành/Tỉnh</td>
+                        <td>Gọn nhẹ</td>
+                        <td class="fee-highlight">35,000 VNĐ</td>
+                        <td>3 - 5 ngày</td>
+                        <td>Chuyển phát nhanh</td>
+                    </tr>
+                    <tr>
+                        <td>Ngoại thành/Tỉnh</td>
+                        <td>Cồng kềnh</td>
+                        <td class="fee-highlight">100,000 VNĐ</td>
+                        <td>5 - 7 ngày</td>
+                        <td>Phụ phí vùng sâu vùng xa (nếu có)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <h2>Bảng Phí Kiểm Định Độ Mới Của Đồ</h2>
-        <table class="pricing-table">
-            <thead>
-                <tr>
-                    <th>Loại sản phẩm</th>
-                    <th>Phí kiểm định</th>
-                    <th>Chi tiết kiểm định</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Quần áo, Thời trang</td>
-                    <td class="fee-highlight">15,000 VNĐ / sản phẩm</td>
-                    <td>Kiểm tra sờn rách, ố màu, hỏng khóa kéo</td>
-                </tr>
-                <tr>
-                    <td>Đồ điện tử mini</td>
-                    <td class="fee-highlight">30,000 VNĐ / sản phẩm</td>
-                    <td>Kiểm tra nguồn, chức năng cơ bản, pin</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Loại sản phẩm</th>
+                        <th>Phí kiểm định</th>
+                        <th>Chi tiết kiểm định</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quần áo, Thời trang</td>
+                        <td class="fee-highlight">15,000 VNĐ / sản phẩm</td>
+                        <td>Kiểm tra sờn rách, ố màu, hỏng khóa kéo</td>
+                    </tr>
+                    <tr>
+                        <td>Đồ điện tử mini</td>
+                        <td class="fee-highlight">30,000 VNĐ / sản phẩm</td>
+                        <td>Kiểm tra nguồn, chức năng cơ bản, pin</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <div style="text-align: center; margin-top: 20px;">
-            <button onclick="showNotification()">Nhận voucher giảm giá</button>
+        <div class="action-btn-wrapper">
+            <button class="btn-primary" onclick="showNotification()">Nhận voucher giảm giá</button>
         </div>
     </div>
 </main>
@@ -133,7 +136,7 @@
 <footer>
     <div class="site-footer">
         <div class="footer-col">
-                <a class="footer-logo">2HAND <span>UNIVERSE</span></a>
+            <a class="footer-logo" href="index.html">2HAND <span>UNIVERSE</span></a>
             <p>Hệ thống mua bán & ký gửi đồ cũ, đồ điện tử, gia dụng uy tín chất lượng</p>
         </div>
 
@@ -150,8 +153,8 @@
 
         <div class="footer-col">
             <h4>Liên hệ</h4>
-            <p><i class="fa-solid fa-location-dot"></i>Trường đại học mở TPHCM - Nhơn Đức - Nhà Bè</p>
-            <p><i class="fa-solid fa-phone"></i>Hotline: 0987 654 321</p>
+            <p><i class="fa-solid fa-location-dot"></i> Trường đại học Mở TPHCM - Nhơn Đức - Nhà Bè</p>
+            <p><i class="fa-solid fa-phone"></i> Hotline: 0987 654 321</p>
             <p><i class="fa-solid fa-envelope"></i> Email: 2551050212tho@ou.edu.vn</p>
         </div>
     </div>
