@@ -1,6 +1,3 @@
-/* ==========================================
-   TEAM ABOUT PAGE STYLES
-   ========================================== */
 .team-section {
     padding: 50px 20px;
     background-color: #f8f9fa;
@@ -8,7 +5,7 @@
 
 .team-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
 .team-header {
@@ -17,7 +14,7 @@
 }
 
 .team-header h2 {
-    color: #325E6A;
+    color: #ff6a00;
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
