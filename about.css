@@ -1,0 +1,148 @@
+/* ==========================================
+   TEAM ABOUT PAGE STYLES
+   ========================================== */
+.team-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-header h2 {
+    color: #325E6A;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team-header p {
+    color: #666;
+    font-size: 15px;
+}
+
+.header-line {
+    width: 60px;
+    height: 3px;
+    background-color: #ff9a00;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Responsive Grid hiển thị 3 cột desktop, 1 cột mobile */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Card thiết kế */
+.team-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Khung Ảnh & Hiệu ứng Hover Social Icons */
+.member-img {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+.member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.team-card:hover .member-img img {
+    transform: scale(1.05);
+}
+
+.social-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(50, 94, 106, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-card:hover .social-overlay {
+    opacity: 1;
+}
+
+.social-overlay a {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #325E6A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.social-overlay a:hover {
+    background-color: #ff9a00;
+    color: #ffffff;
+}
+
+/* Thông tin chi tiết */
+.member-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.member-info h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.member-role {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.member-role.leader {
+    background-color: #fff3e0;
+    color: #e65100;
+}
+
+.member-role.dev {
+    background-color: #e0f2f1;
+    color: #004d40;
+}
+
+.member-info p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}

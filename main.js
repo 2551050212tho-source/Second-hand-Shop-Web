@@ -12,3 +12,7 @@
             categoryMenu.classList.remove('active');
         }
     });
+
+    document.getElementById('mobile-search-toggle').addEventListener('click', function() {
+    document.getElementById('mobile-search-bar').classList.toggle('active');
+    });
