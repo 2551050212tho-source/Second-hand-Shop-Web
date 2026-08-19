@@ -5,6 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
+
 .site-header {
     background-color: #325E6A; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
@@ -133,6 +134,7 @@ text-decoration: none;
     background-color: #ffffff; 
     color: #111111;
 }
+
 .site-footer {
     width: 100%;
     display: flex;
@@ -247,6 +249,10 @@ text-decoration: none;
     transition: background-color 0.2s, color 0.2s;
 }
 
+.category-menu li:hover {
+    background: #e9e5e5;
+}
+
 .category-menu li a i {
     color: #000000;
     font-size: 16px;
@@ -254,7 +260,6 @@ text-decoration: none;
 }
 
 .category-menu li a:hover {
-    background-color: #f0f4f5;  
     color: #fb4f1b !important;  
 }
 

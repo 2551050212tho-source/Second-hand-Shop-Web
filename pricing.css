@@ -87,6 +87,18 @@ table.pricing-table td.fee-highlight {
     transform: translateY(-1px);
 }
 
+@media screen and (max-width: 1024px) {
+    .pricing-container {
+        margin-bottom: 270px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .pricing-container {
+        margin-bottom: 60px;
+    }
+}
+
 /* Media Queries cho Mobile & Tablet */
 @media screen and (max-width: 768px) {
     .pricing-container {
@@ -117,3 +129,5 @@ table.pricing-table td.fee-highlight {
         font-size: 13px;
     }
 }
+
+

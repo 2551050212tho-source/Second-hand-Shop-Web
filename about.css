@@ -104,6 +104,13 @@
     transform: translateY(-2px);
 }
 
+@media screen and (max-width: 1024px) {
+
+    .our-team-section {
+        margin-bottom: 300px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -112,6 +119,10 @@
 
     .team-header-box {
         padding-bottom: 110px;
+    }
+
+    .our-team-section {
+        margin-bottom: 0;
     }
 }
 

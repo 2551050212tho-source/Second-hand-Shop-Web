@@ -89,6 +89,21 @@ textarea{
 .nutgui:hover{
     opacity: .5;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .formrequest {
+        margin-bottom: 310px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .formrequest {
+        margin-bottom: -5px;
+    }
+}
+
 @media screen and (max-width:450px) {
     
 }
+
