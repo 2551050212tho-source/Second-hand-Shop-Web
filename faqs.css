@@ -56,16 +56,4 @@ body{
     background-color:white;
 }
 
-p{
-    border:solid;
-    border-width:2px;
-    border-color:#67C090;
-    border-radius:5px;
-    color:white;
-    background-color:#3f7b8b;
-    padding:10px;
-    display:flex;
-    max-width: 250px;
-    max-height:200px;
-    margin: 5px auto;
-}
+
