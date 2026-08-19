@@ -1,145 +1,160 @@
-.team-section {
-    padding: 50px 20px;
-    background-color: #f8f9fa;
+/* ==========================================
+   OUR TEAM SECTION STYLES
+   ========================================== */
+
+/* Nền xám chung toàn trang */
+.our-team-section {
+    background-color: #f2f2f2;
+    padding: 40px 20px 80px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.team-container {
-    max-width: 1200px;
-    margin: 5px auto;
-}
-
-.team-header {
+/* Khung nền trắng phía trên */
+.team-header-box {
+    background-color: #ffffff;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 40px 130px; /* Đệm dưới rộng (130px) để chừa chỗ cho ảnh đè lên */
     text-align: center;
-    margin-bottom: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
 }
 
-.team-header h2 {
-    color: #ff6a00;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.team-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 20px;
 }
 
-.team-header p {
-    color: #666;
+.team-description {
+    color: #555555;
     font-size: 15px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.header-line {
-    width: 60px;
-    height: 3px;
-    background-color: #ff9a00;
-    margin: 15px auto 0;
-    border-radius: 2px;
+/* Container lưới chứa thành viên */
+.team-grid-container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* Responsive Grid hiển thị 3 cột desktop, 1 cột mobile */
+/* Kỹ thuật kéo danh sách đè lên khung trắng bằng margin-top âm */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột trên Desktop */
+    gap: 25px;
+    margin-top: -90px; /* Đẩy toàn bộ hàng ảnh lên trên 90px */
 }
 
-/* Card thiết kế */
 .team-card {
-    background: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-/* Khung Ảnh & Hiệu ứng Hover Social Icons */
-.member-img {
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 1 / 1;
-}
-
-.member-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-.team-card:hover .member-img img {
-    transform: scale(1.05);
-}
-
-.social-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(50, 94, 106, 0.85);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.team-card:hover .social-overlay {
-    opacity: 1;
-}
-
-.social-overlay a {
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    color: #325E6A;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 18px;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-.social-overlay a:hover {
-    background-color: #ff9a00;
-    color: #ffffff;
-}
-
-/* Thông tin chi tiết */
-.member-info {
-    padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.member-info h3 {
-    font-size: 20px;
-    color: #222;
+/* Định dạng Avatar tròn */
+.avatar-wrapper img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Chức danh */
+.team-card .role {
+    font-size: 13px;
+    color: #a0a0a0;
+    text-transform: lowercase;
     margin-bottom: 6px;
+    display: block;
 }
 
-.member-role {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
+/* Tên thành viên */
+.team-card .name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111111;
     margin-bottom: 12px;
 }
 
-.member-role.leader {
-    background-color: #fff3e0;
-    color: #e65100;
-}
-
-.member-role.dev {
-    background-color: #e0f2f1;
-    color: #004d40;
-}
-
-.member-info p {
+/* Đoạn mô tả ngắn */
+.team-card .bio {
     font-size: 13px;
-    color: #666;
+    color: #666666;
     line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+
+/* Các Icon Mạng xã hội hình tròn màu xanh */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    background-color: #4da6ff; /* Màu xanh nhạt chuẩn hình */
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.social-icons a:hover {
+    background-color: #2b88e6;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN (TABLET & MOBILE)
+   ========================================== */
+
+/* 1. Màn hình Tablet (Dưới 992px): Chuyển thành 2 Cột */
+@media screen and (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+
+    .team-header-box {
+        padding-bottom: 110px;
+    }
+}
+
+/* 2. Màn hình Mobile (Dưới 600px): Chuyển thành 1 Cột */
+@media screen and (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        margin-top: -70px;
+        gap: 40px;
+    }
+
+    .team-header-box {
+        padding: 30px 15px 90px;
+    }
+
+    .team-title {
+        font-size: 28px;
+    }
+
+    .team-description {
+        font-size: 13px;
+    }
+
+    .avatar-wrapper img {
+        width: 140px;
+        height: 140px;
+    }
 }
