@@ -185,3 +185,21 @@ body {
     
 }
 
+.card .card-img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-title,
+.card:hover .card-price {
+        transform: translate(0, -45px);
+    }
+
+.card:hover .card-img {
+    transform: scale(1.1);
+    transform: translateY(-55px);
+}
+
+.card.cat-giay:hover .card-img {
+    transform: translateY(-25px) rotate(20deg);
+}
+
