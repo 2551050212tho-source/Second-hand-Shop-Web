@@ -1,20 +1,14 @@
-/* ==========================================
-   OUR TEAM SECTION STYLES
-   ========================================== */
-
-/* Nền xám chung toàn trang */
 .our-team-section {
     background-color: #f2f2f2;
     padding: 40px 20px 80px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Khung nền trắng phía trên */
 .team-header-box {
     background-color: #ffffff;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 60px 40px 130px; /* Đệm dưới rộng (130px) để chừa chỗ cho ảnh đè lên */
+    padding: 60px 40px 130px; 
     text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
 }
@@ -34,18 +28,16 @@
     margin: 0 auto;
 }
 
-/* Container lưới chứa thành viên */
 .team-grid-container {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* Kỹ thuật kéo danh sách đè lên khung trắng bằng margin-top âm */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 cột trên Desktop */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 25px;
-    margin-top: -90px; /* Đẩy toàn bộ hàng ảnh lên trên 90px */
+    margin-top: -90px; 
 }
 
 .team-card {
@@ -55,7 +47,6 @@
     align-items: center;
 }
 
-/* Định dạng Avatar tròn */
 .avatar-wrapper img {
     width: 170px;
     height: 170px;
@@ -65,7 +56,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Chức danh */
 .team-card .role {
     font-size: 13px;
     color: #a0a0a0;
@@ -74,7 +64,6 @@
     display: block;
 }
 
-/* Tên thành viên */
 .team-card .name {
     font-size: 20px;
     font-weight: 700;
@@ -82,7 +71,6 @@
     margin-bottom: 12px;
 }
 
-/* Đoạn mô tả ngắn */
 .team-card .bio {
     font-size: 13px;
     color: #666666;
@@ -91,7 +79,6 @@
     padding: 0 5px;
 }
 
-/* Các Icon Mạng xã hội hình tròn màu xanh */
 .social-icons {
     display: flex;
     gap: 10px;
@@ -101,7 +88,7 @@
 .social-icons a {
     width: 36px;
     height: 36px;
-    background-color: #4da6ff; /* Màu xanh nhạt chuẩn hình */
+    background-color: #4da6ff;
     color: #ffffff;
     border-radius: 50%;
     display: inline-flex;
@@ -117,11 +104,6 @@
     transform: translateY(-2px);
 }
 
-/* ==========================================
-   RESPONSIVE DESIGN (TABLET & MOBILE)
-   ========================================== */
-
-/* 1. Màn hình Tablet (Dưới 992px): Chuyển thành 2 Cột */
 @media screen and (max-width: 992px) {
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -133,7 +115,6 @@
     }
 }
 
-/* 2. Màn hình Mobile (Dưới 600px): Chuyển thành 1 Cột */
 @media screen and (max-width: 600px) {
     .team-grid {
         grid-template-columns: 1fr;
