@@ -7,7 +7,7 @@
 
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to right, #ccffaa, #1e5b53);
 }
 
@@ -24,9 +24,10 @@ body {
 
 .grid-product {
     display: grid;
-    grid-template-columns: repeat( 5, 1fr );
-
-
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px 20px;
+    max-width: 1200px;
+    margin: 0 10px;
 }
 
 .card-cart, .card-board {
@@ -148,5 +149,31 @@ body {
 
 .card-action button:hover {
     transform: scale(0.9);
+}
+
+@media (max-width: 480px) {
+
+    .grid-product {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px 10px;
+    }
+
+    .card {
+        height: 260px;
+        padding: 15px;
+    }
+
+    .card-title, .card-price {
+        font-size: 15px;
+    }
+
+    .card:hover .card-img {
+        transform: translateY(-15px) rotate(10deg);
+    }
+
+    .card:hover .card-title, 
+    .card:hover .card-price {
+        transform: translate(0, -35px);
+    }
 }
 
