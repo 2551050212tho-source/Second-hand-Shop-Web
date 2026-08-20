@@ -27,7 +27,7 @@ const products = [
     { id: 21, cat: "giadung", condition: "97% NEW", img: "Image/Bình đá Omo 5L.png", title: "Bình đá Omo 5L", price: "80.000 VNĐ", sizes: ["5L"] },
     { id: 22, cat: "giadung", condition: "90% NEW", img: "Image/Nồi cơm điện Taka.png", title: "Nồi cơm điện Taka", price: "350.000 VNĐ", sizes: [""] },
     { id: 23, cat: "giadung", condition: "90% NEW", img: "Image/Bếp ga xanh dương.png", title: "Bếp ga xanh dương", price: "400.000 VNĐ", sizes: [""] },
-    { id: 24, cat: "giadung", condition: "90% NEW", img: "https://via.placeholder.com/200", title: "Máy xay sinh tố Philips", price: "40$", sizes: ["1.5L"] },
+    { id: 24, cat: "giadung", condition: "90% NEW", img: "Image/ ", title: "Máy xay sinh tố Philips", price: "40$", sizes: ["1.5L"] },
     { id: 25, cat: "giadung", condition: "90% NEW", img: "https://via.placeholder.com/200", title: "Máy xay sinh tố Philips", price: "40$", sizes: ["1.5L"] },
     { id: 26, cat: "giadung", condition: "90% NEW", img: "https://via.placeholder.com/200", title: "Máy xay sinh tố Philips", price: "40$", sizes: ["1.5L"] },
     { id: 27, cat: "giadung", condition: "90% NEW", img: "https://via.placeholder.com/200", title: "Máy xay sinh tố Philips", price: "40$", sizes: ["1.5L"] },
