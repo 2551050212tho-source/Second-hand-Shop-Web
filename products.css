@@ -226,7 +226,7 @@ body {
     transform: translateY(-25px) rotate(20deg);
 }
 
-@media (max-width: 340px) {
+@media (max-width: 375px) {
     .card-action button {
         padding: 3px 5px;
         font-weight: 500;
